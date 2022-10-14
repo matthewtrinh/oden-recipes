@@ -10,160 +10,190 @@
 
 <body>
     <nav class="navbar">
-        <div class="home">Matthew's Recipes</div>
-        <ul>
-            <li>
-                <a href="../index.html">Home</a>
-            </li>
-            <li>
-                <a href="#">About me</a>
-            </li>
-        </ul>
+        <div class="container">
+            <div class="home">Matthew's Recipes</div>
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">About me</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
-    <section id="introduction">
-        <h1>Best Pan-Seared Steak Recipe</h1>
-        <p>by Matthew Trinh</p>
+    <!-- <div id="sticky-nav">
+        <h3>Sections</h3>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#steak-school">How to pick out steak</a></li>
+            <li><a href="#steak-prep">Preparing steak</a></li>
+            <li><a href="#cooking-tips">Cooking tips</a></li>
+        </ul>
+    </div> -->
 
-        <img src="https://natashaskitchen.com/wp-content/uploads/2020/03/Pan-Seared-Steak-4.jpg" alt="Steak Picture" width="400">
-        <!-- URL to image: https://natashaskitchen.com/wp-content/uploads/2020/03/Pan-Seared-Steak-4.jpg-->
-        <!-- Relative link to image: ./img/title-picture.jpg-->
-    
-        <!--Initial introduction paragraph-->
-        <p>This recipe will teach you how to create the best pan-seared steak and help you learn the "why" you do each step.</p>
-        <!--About me-->
-        <p>I have an unhealthy obsession on steak and hope to impart what I have learned to you. With this, you will be able to make steaks a million times better than Texas Roadhouse ever could.</p>    
-    
-        <a href="#recipe">Jump to Recipe</a>
+    <section id="introduction">
+        <div class="container">
+            <h1 class="title">Best Pan-Seared Steak Recipe</h1>
+            <p class="title">by Matthew Trinh</p>
+
+            <img src="https://www.tastingtable.com/img/gallery/15-ingredients-that-will-seriously-elevate-your-steak/intro-1663169111.webp" alt="Steak Picture" width="1000" height=auto>
+            <!-- URL to image: https://natashaskitchen.com/wp-content/uploads/2020/03/Pan-Seared-Steak-4.jpg-->
+            <!-- Relative link to image: ./img/title-picture.jpg-->
+        
+            <!--Initial introduction paragraph-->
+            <p>This recipe will teach you how to create the best pan-seared steak and help you learn the "why" you do each step.</p>
+            <!--About me-->
+            <p><br>I have an unhealthy obsession on steak and hope to impart what I have learned to you. With this, you will be able to make steaks a million times better than Texas Roadhouse ever could.</p>    
+        
+            <a href="#recipe">Jump to Recipe</a>
+        </div>
     </section>
     
     <section id="steak-school">
-        <h2>Steak School 101: How to pick out your steak</h2>
+        <div class="container">
+            <h2>Steak School 101: How to pick out your steak</h2>
 
-        <p><strong>Steak grading:</strong> Steaks in the US are graded into three primary groups based on their "marbling" aka intermuscular fat which largely determines how juicy and flavorful the steak is. The gradings from less desirable to more desirable are: Select, Choice, and Prime. (Some stores may have "Certified Angus Beef" which includes Prime and the upper subset of Choice graded steaks.) Choose the highest grade that your budget allows.</p>
+            <p><strong>Steak grading:</strong> Steaks in the US are graded into three primary groups based on their "marbling" aka intermuscular fat which largely determines how juicy and flavorful the steak is. The gradings from less desirable to more desirable are: Select, Choice, and Prime. (Some stores may have "Certified Angus Beef" which includes Prime and the upper subset of Choice graded steaks.) <br> Choose the highest grade that your budget allows.</p>
 
-        <img src="https://static.wixstatic.com/media/cc5225_c22929d33939449fb21e0e0d9006185c~mv2.jpg/v1/fill/w_720,h_512,al_c,lg_1,q_85,enc_auto/beef.jpg" alt="Steak grade examples" width="600">
-
-
-
-        <p><strong>Steak cuts:</strong> The cut of steak determines how tender and meaty the steak taste. The three most popular cuts of steak are: Filet Mignon, New York Strip, and Ribeye.
-        <ul>
-            <li>Filet Mignon (right) comes from the tenderloin of the cow and is coveted for its extreme tenderness. This cut, however, is leaner and considered to have less flavor than other cuts. </li> 
-            <li>New York Strip (left), identified by the fat cap the runs along the side of the steak, has great flavor and moderate marbling but is not as tender as the filet mignon. </li> 
-            <li>The Ribeye (center) is often considered the best cut of steak for its balance in tenderness, marbling, and flavor. </li>
-        </ul></p>
-        <p>Note: Picking thick cuts of steaks (> ~1.25inches) will allow for more time develop a good crust and greater margin of error while cooking.</p>
-
-        <img src="https://thehealthybutcher.com/blog/wp-content/uploads/2018/06/the-healthy-butcher-prime-steaks-header.jpg" alt="Steak cuts examples" width="600">
+            <img src="https://static.wixstatic.com/media/cc5225_c22929d33939449fb21e0e0d9006185c~mv2.jpg/v1/fill/w_720,h_512,al_c,lg_1,q_85,enc_auto/beef.jpg" alt="Steak grade examples" width="600">
 
 
 
-        <p><strong>Steak freshness:</strong> As raw steaks sit out and are exposed to air, they begins to oxide and change color. Steaks go from a deep purple-ish red to the bright red that we typically see at grocery stores to brown/gray. Deep purple-ish red steaks are typically only found in vacuum sealed steaks and are extremely expensive. When looking for fresh steaks, avoid any steaks with patches of brown or gray. </p>
-        <p>Tip: Vacuum sealed frozen steaks have practically indistinguishable quality from fresh steaks. Buying in bulk and freezing the rest is a great way to save money!</p>
+            <p><strong>Steak cuts:</strong> The cut of steak determines how tender and meaty the steak taste. The three most popular cuts of steak are: Filet Mignon, New York Strip, and Ribeye.
+            <ul>
+                <li>Filet Mignon (right) comes from the tenderloin of the cow and is coveted for its extreme tenderness. This cut, however, is leaner and considered to have less flavor than other cuts. </li> 
+                <li>New York Strip (left), identified by the fat cap the runs along the side of the steak, has great flavor and moderate marbling but is not as tender as the filet mignon. </li> 
+                <li>The Ribeye (center) is often considered the best cut of steak for its balance in tenderness, marbling, and flavor. </li>
+            </ul></p>
+            <p>Note: Picking thick cuts of steaks (> ~1.25inches) will allow for more time develop a good crust and greater margin of error while cooking.</p>
+
+            <img src="https://thehealthybutcher.com/blog/wp-content/uploads/2018/06/the-healthy-butcher-prime-steaks-header.jpg" alt="Steak cuts examples" width="600">
+
+
+
+            <p><strong>Steak freshness:</strong> As raw steaks sit out and are exposed to air, they begins to oxide and change color. Steaks go from a deep purple-ish red to the bright red that we typically see at grocery stores to brown/gray. Deep purple-ish red steaks are typically only found in vacuum sealed steaks and are extremely expensive. When looking for fresh steaks, avoid any steaks with patches of brown or gray. </p>
+            <p>Tip: Vacuum sealed frozen steaks have practically indistinguishable quality from fresh steaks. Buying in bulk and freezing the rest is a great way to save money!</p>
+        </div>
     </section>
     
     <section id="steak-prep">
-        <h2>Preparing the steak</h2>
+        <div class="container">
+            <h2>Preparing the steak</h2>
 
-        <p><strong>Dry brining:</strong> Dry brining is an important step to get a great crust on the outside of the steak, deeply season your steak, and ensure your steak will hold on to more of its juices during the cooking process. The salt draws out the moisture from the outside of the steak while also penetrating deep into the steak, seasoning and tenderizing the meat. In order to get a good crust, you must get as much moisture out of the surface of the steak as you can. When searing your steak, excess moisture must be evaporated first before the steak begins to form its crust. Excess moisture steals heat that would have been used to form a good crust on the steak and in extremely cases, can cause your steak to boil or steam which is extremely bad.</p>
-        
-        <p><strong>How to dry brine:</strong></p>
-        <ol>
-            <li>At least one day before, preferably a few days, pat dry the outside of the steak with paper towels to get rid of surface moisture.</li>
-            <li>Generously salt and pepper all sides of the steak.* <br>Tip: Use finely grounded pepper. We want the steak to lay flat against the surface of the pan in order to have the most contact to form a good crust. Coarsely grounded pepper will raise the steak away from making contact with the pan taking away from the crust.</li>
-            <li>Place the steak on a wired rack uncovered in the fridge until its time to cook. </li>
-        </ol>
-        
-        <p>*Note: Some prefer to add pepper after cooking out of fear of burning the pepper; however, in my experience this has never happened.</p>
+            <p><strong>Dry brining:</strong> Dry brining is an important step to get a great crust on the outside of the steak, deeply season your steak, and ensure your steak will hold on to more of its juices during the cooking process. The salt draws out the moisture from the outside of the steak while also penetrating deep into the steak, seasoning and tenderizing the meat. In order to get a good crust, you must get as much moisture out of the surface of the steak as you can. When searing your steak, excess moisture must be evaporated first before the steak begins to form its crust. Excess moisture steals heat that would have been used to form a good crust on the steak and in extremely cases, can cause your steak to boil or steam which is extremely bad.</p>
+            
+            <p><br><strong>How to dry brine:</strong></p>
+            <ol>
+                <li>At least one day before, preferably a few days, pat dry the outside of the steak with paper towels to get rid of surface moisture.</li>
+                <li>Generously salt and pepper all sides of the steak.* <br>Tip: Use finely grounded pepper. We want the steak to lay flat against the surface of the pan in order to have the most contact to form a good crust. Coarsely grounded pepper will raise the steak away from making contact with the pan taking away from the crust.</li>
+                <li>Place the steak on a wired rack uncovered in the fridge until its time to cook. </li>
+            </ol>
+            
+            <p>*Note: Some prefer to add pepper after cooking out of fear of burning the pepper; however, in my experience this has never happened.</p>
 
 
 
-        <p><strong>Myth busting:</strong> You do not need to take out your steak before cooking. The hour or whatever it sits out will not raise your steak to room temperature (at best it will raise the temperature by 5-10°F) nor will it help your steak to cook significantly faster or more even. It will only encourage bacteria growth.</p>
+            <p><br><strong>Myth busting:</strong> You do not need to take out your steak before cooking. The hour or whatever it sits out will not raise your steak to room temperature (at best it will raise the temperature by 5-10°F) nor will it help your steak to cook significantly faster or more even. It will only encourage bacteria growth.</p>
+        </div>
     </section>
     
     <section id="cooking-tips">
-        <h2>Cooking tips</h2>
+        <div class="container">
+            <h2>Cooking tips</h2>
 
-        <p><strong>Cooking oil/fat:</strong> A high smoke point oil/fat is imperative to a good crust formation. Oils/fats with low smoke points will burn and leave a bitter taste at the temperatures needed to achieve a good crust. Common oils with high smoke points and their respective smoke points are: Vegetable oil (400°F), Canola oil (400°F), Ghee (480°F), Avocado oil (520°F)**. The higher the smoke point, the better.</p>
-        <p>Liberally coat the bottom of the pan with oil. Good contact is necessary for a good crust; the oil fills in the gaps from the natural ridges and bumps on the steak and the pan.</p>
-        <p>**Note: Please beware that the majority of oils labeled as avocado oil is not 100% avocado oil.</p>
-    
-
-
-        <p><strong>Pan/cookware:</strong> A large heavy pan that can hold a lot of heat is best to sear steaks. I recommend using a cast iron pan, but a heavy carbon steel or stainless steel pan also work.</p>
+            <p><strong>Cooking oil/fat:</strong> A high smoke point oil/fat is imperative to a good crust formation. Oils/fats with low smoke points will burn and leave a bitter taste at the temperatures needed to achieve a good crust. Common oils with high smoke points and their respective smoke points are: Vegetable oil (400°F), Canola oil (400°F), Ghee (480°F), Avocado oil (520°F)**. The higher the smoke point, the better.</p>
+            <p>Liberally coat the bottom of the pan with oil. Good contact is necessary for a good crust; the oil fills in the gaps from the natural ridges and bumps on the steak and the pan.</p>
+            <p>**Note: Please beware that the majority of oils labeled as avocado oil is not 100% avocado oil.</p>
         
 
 
-        <p><strong>Steak temperature/doneness:</strong> The most consistent way to get the perfectly cooked steaks is to use a meat thermometer! 120°F for rare, 130°F for medium-rare, 140°F for medium, 150°F for medium-well, and 160°F for well done. <br>Unless you are cooking fifty steaks a day every day, touching your steak is a terrible way to check its doneness. A simple way of disproving whatever touch method you have heard of: compare the difference in firmness of your hand or face to the person next to you. Everyone's hand and face feels different!
-    
-        <br>The steak's internal temperature will continue to rise from the residue heat as it rests. Remove your steak ~5-10°F before your desired temperature.</p>
-    
-        <img src="https://www.omahasteaks.com/blog/wp-content/uploads/2020/01/Steak-Doneness-Guide-and-Temperature-Chart-blog.jpg" alt="Steak temperature chart" width="400" height=auto>
-    
+            <p><br><strong>Pan/cookware:</strong> A large heavy pan that can hold a lot of heat is best to sear steaks. I recommend using a cast iron pan, but a heavy carbon steel or stainless steel pan also work.</p>
+            
 
 
-        <p><strong>Cooking location:</strong> Searing steaks will produce a lot of smoke. It is advised to cook outside or in a well ventilated area. You most likely will set off your fire alarm if you live in a small apartment.</p>
+            <p><br><strong>Steak temperature/doneness:</strong> The most consistent way to get the perfectly cooked steaks is to use a meat thermometer! 120°F for rare, 130°F for medium-rare, 140°F for medium, 150°F for medium-well, and 160°F for well done. <br>Unless you are cooking fifty steaks a day every day, touching your steak is a terrible way to check its doneness. A simple way of disproving whatever touch method you have heard of: compare the difference in firmness of your hand or face to the person next to you. Everyone's hand and face feels different!
+        
+            <br>The steak's internal temperature will continue to rise from the residue heat as it rests. Remove your steak ~5-10°F before your desired temperature.</p>
+        
+            <img src="https://www.omahasteaks.com/blog/wp-content/uploads/2020/01/Steak-Doneness-Guide-and-Temperature-Chart-blog.jpg" alt="Steak temperature chart" width="400" height=auto>
+        
+
+
+            <p><strong>Cooking location:</strong> Searing steaks will produce a lot of smoke. It is advised to cook outside or in a well ventilated area. You most likely will set off your fire alarm if you live in a small apartment.</p>
+        </div>
     </section>
     
     <section id="recipe">
-        <img src="https://natashaskitchen.com/wp-content/uploads/2020/03/Pan-Seared-Steak-10-728x1092.jpg" alt="Steak cooking steps collage">
+        <div class="container">
+            <h1>The Best Pan-Seared Steak with Garlic Butter</h1>
+            
+            <div class="ingredients">
+                <div>
+                    <p><strong>Prep time:</strong> 5 minutes</p>
+                    <p><strong>Cook time:</strong> 10 minutes</p>
+                    <p><strong>Additional time:</strong> 10 minutes</p>
+                    <p><br><strong>Total time:</strong> 25 minutes + at least 1 day</p>
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>Thick steak of choice</li>
+                        <li>High smoke point oil/fat</li>
+                        <li>2 Tbsp unsalted butter</li>
+                        <li>1 sprig fresh thyme</li>
+                        <li>1 sprig fresh rosemary</li>
+                        <li>2 cloves smashed garlic</li>
+                    </ul>
+                </div>
 
-        <h1>The Best Pan-Seared Steak with Garlic Butter</h1>
-        <h2>Ingredients</h2>
-        <ul>
-            <li>Thick steak of choice</li>
-            <li>High smoke point oil/fat</li>
-            <li>2 Tbsp unsalted butter</li>
-            <li>1 sprig fresh thyme</li>
-            <li>1 sprig fresh rosemary</li>
-            <li>2 cloves smashed garlic</li>
-        </ul>
-    
-        <h2>Directions</h2>
-        <ol>
-            <li>Dry brine your steak</li>
-            <li>Turn on your vent to the highest setting if cooking inside</li>
-            <li>Heat up your pan on the highest setting for at least 3 minutes. Once the pan is hot, liberally coat the bottom of the pan with oil. </li>
-            <li>Once wisps of smoke start coming from the oil, place the steak in the pan. If cooking a New York Strip, sear the fat cap first to render the fat
-            <li>Press the steak down on the pan as it cooks to ensure good contact</li>
-            <li>Once your steak has formed a brown crust (~3 minutes), flip the steak, and sear the other side</li>
-            <li>Reduce heat and add the thyme, rosemary, butter, and garlic</li>
-            <li>When the butter is frothy and foaming, tilt the pan and continuously spoon the butter on top the steak until the steak reaches the 5-10 degrees below desired temperature</li>
-            <li>Remove from pan, loosely cover with foil, and allow to rest at least 10 minutes</li>
-            <li>Before serving, reheat the leftover oil and garlic infused herb butter. Once hot, pour the mixture on top of the steak to reawaken the crust</li>
-            <li>Slice the steak against the grain</li>
-        </ol>
-    
-    
-        <h2>Directions with commentary</h2>
-        <ol>
-            <li>Dry brine your steak. See steps above in the preparing the steak section.</li>
-            <li>Turn on your vent to the highest setting if cooking inside. It will get smoky.</li>
-            <li>Heat up your pan on the highest setting for at least 3 minutes. We want the pan to be ripping hot to get a near sear on the steak. Once the pan is ripping hot, liberally coat the bottom of the pan with oil. The oil fills in the gaps from the natural ridges and bumps on the steak and the pan.</li>
-            <li>Once you start seeing wisps of smoke coming from the oil, place the steak in the pan. If you do not instantly hear your steak start sizzling, your pan is not hot enough. Remove the steak and let your pan get hotter. If you are cooking a New York Strip, sear the fat cap first to render the fat.<br>You will see a lot of smoke coming out of the pan and you might set off your fire alarm.</li>
-            <li> Press the steak down on the pan to ensure good contact. As the steak cooks, it will have the tendency to curl up as the muscle fibers tighten. Continue to press down on the steak to ensure good contact. If you are boujee and have steak weights, place your steak weights on top the steak.</li>
-            <li>Once the steak has formed a brown crust (~3 minutes), flip the steak, admire the crust, and sear the other side.</li>
-            <li>Reduce heat and add thyme and rosemary. You want to hear them fry in the hot oil.</li>
-            <li>Add butter and garlic. You want get the butter to become frothy and foamy. If the butter is not frothing, turn up heat. Once frothy and foamy, tilt the pan with an oven mitt or kitchen towel and continuously spoon the butter over the steak. Fat carries flavor. The thyme, rosemary, and garlic flavors will get infused into the butter seeping into the steak.</li>
-            <li>Check the temperature of your steak by sticking a meat thermometer in horizontally into the thickest part of the steak. Beware that the rate of that temperature increases the higher temperature the steak gets i.e. it will take significantly less time for the steak to go from 100° to 120° than from 60° to 80° since the majority of the water content which absorbs a lot of energy will be evaporated.</li> 
-            <li>Once the steak reaches the 5-10 degrees below desired temperature, remove, loosely cover with foil, and allow to rest at least 10 minutes. As the steak rests, the residue heat will bring the steak up to the desired final temperature. Cooking the steak as such a high temperature tightens the muscle fibers which releases juice. Allowing the steak to rest lets the muscle fibers start to relax and reabsorb its juices.</li>
-            <li>Just before serving, reheat the leftover oil and garlic infused herb butter. Once hot, pour the mixture on top of the steak to reawaken the crust. As the steak sits in the foil to rest, the crust will steam a little and become a little soft. This step lets us get the crispy crust again.</li>
-            <li>Slice the steak against the grain to mitigate long muscle fibers that make the steak tough/chewy.</li>
-        </ol>
-    
-        <h2>What goes with Steaks</h2>
-        <ul>
-            <li>Roasted Asparagus</li>
-            <li>Roasted Brussel Sprouts</li>
-            <li>Roasted Potatoes</li>
-        </ul>
-        <p>If roasting vegetables, you can put your cast iron pan in the oven while it preheats and as you prep to get your cast iron hot to sear the steak.</p>
-    
-        <h3>Wholly unnecessary and extra: Ways to take your steak to the next level</h3>
-        <ul>
-            <li>Use a grill or a beefer to achieve extremely high temperatures to get an even better crust</li>
-            <li>Make a chimichurri or steak sauce with the fond left in the pan</li>
-        </ul>
+                <img src="https://natashaskitchen.com/wp-content/uploads/2020/03/Pan-Seared-Steak-10-728x1092.jpg" alt="Steak cooking steps collage">
+            </div>
+        
+            <h2>Directions</h2>
+            <ol>
+                <li>Dry brine your steak. See steps above in the preparing the steak section.</li>
+                <li>Turn on your vent to the highest setting if cooking inside. It will get smoky.</li>
+                <li>Heat up your pan on the highest setting for at least 3 minutes. We want the pan to be ripping hot to get a near sear on the steak. Once the pan is ripping hot, liberally coat the bottom of the pan with oil. The oil fills in the gaps from the natural ridges and bumps on the steak and the pan.</li>
+                <li>Once you start seeing wisps of smoke coming from the oil, place the steak in the pan. If you do not instantly hear your steak start sizzling, your pan is not hot enough. Remove the steak and let your pan get hotter. If you are cooking a New York Strip, sear the fat cap first to render the fat.<br>You will see a lot of smoke coming out of the pan and you might set off your fire alarm.</li>
+                <li> Press the steak down on the pan to ensure good contact. As the steak cooks, it will have the tendency to curl up as the muscle fibers tighten. Continue to press down on the steak to ensure good contact. If you are boujee and have steak weights, place your steak weights on top the steak.</li>
+                <li>Once the steak has formed a brown crust (~3 minutes), flip the steak, admire the crust, and sear the other side.</li>
+                <li>Reduce heat and add thyme and rosemary. You want to hear them fry in the hot oil.</li>
+                <li>Add butter and garlic. You want get the butter to become frothy and foamy. If the butter is not frothing, turn up heat. Once frothy and foamy, tilt the pan with an oven mitt or kitchen towel and continuously spoon the butter over the steak. Fat carries flavor. The thyme, rosemary, and garlic flavors will get infused into the butter seeping into the steak.</li>
+                <li>Check the temperature of your steak by sticking a meat thermometer in horizontally into the thickest part of the steak. Beware that the rate of that temperature increases the higher temperature the steak gets i.e. it will take significantly less time for the steak to go from 100° to 120° than from 60° to 80° since the majority of the water content which absorbs a lot of energy will be evaporated.</li> 
+                <li>Once the steak reaches the 5-10 degrees below desired temperature, remove, loosely cover with foil, and allow to rest at least 10 minutes. As the steak rests, the residue heat will bring the steak up to the desired final temperature. Cooking the steak as such a high temperature tightens the muscle fibers which releases juice. Allowing the steak to rest lets the muscle fibers start to relax and reabsorb its juices.</li>
+                <li>Just before serving, reheat the leftover oil and garlic infused herb butter. Once hot, pour the mixture on top of the steak to reawaken the crust. As the steak sits in the foil to rest, the crust will steam a little and become a little soft. This step lets us get the crispy crust again.</li>
+                <li>Slice the steak against the grain to mitigate long muscle fibers that make the steak tough/chewy.</li>
+            </ol>
+        
+            <h2>Directions without commentary</h2>
+            <ol>
+                <li>Dry brine your steak</li>
+                <li>Turn on your vent to the highest setting if cooking inside</li>
+                <li>Heat up your pan on the highest setting for at least 3 minutes. Once the pan is hot, liberally coat the bottom of the pan with oil. </li>
+                <li>Once wisps of smoke start coming from the oil, place the steak in the pan. If cooking a New York Strip, sear the fat cap first to render the fat
+                <li>Press the steak down on the pan as it cooks to ensure good contact</li>
+                <li>Once your steak has formed a brown crust (~3 minutes), flip the steak, and sear the other side</li>
+                <li>Reduce heat and add the thyme, rosemary, butter, and garlic</li>
+                <li>When the butter is frothy and foaming, tilt the pan and continuously spoon the butter on top the steak until the steak reaches the 5-10 degrees below desired temperature</li>
+                <li>Remove from pan, loosely cover with foil, and allow to rest at least 10 minutes</li>
+                <li>Before serving, reheat the leftover oil and garlic infused herb butter. Once hot, pour the mixture on top of the steak to reawaken the crust</li>
+                <li>Slice the steak against the grain</li>
+            </ol>
+
+            <h2>What goes with Steaks</h2>
+            <ul>
+                <li>Roasted Asparagus</li>
+                <li>Roasted Brussel Sprouts</li>
+                <li>Roasted Potatoes</li>
+            </ul>
+            <p>If roasting vegetables, you can put your cast iron pan in the oven while it preheats and as you prep to get your cast iron hot to sear the steak.</p>
+        
+            <h2>Wholly unnecessary and extra: Ways to take your steak to the next level</h2>
+            <ul>
+                <li>Use a grill or a beefer to achieve extremely high temperatures to get an even better crust</li>
+                <li>Make a chimichurri or steak sauce with the fond left in the pan</li>
+            </ul>
+        </div>
     </section>
    
 

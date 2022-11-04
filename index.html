@@ -5,11 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Recipes</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/turnjs/turn.min.js"></script>
 </head>
 
 <body>
-    <h1>Odin Recipes</h1>
+    <div id="flipbook">
+        <div class="hard">
+            <div id="book-cover" class="page-container">
+                <h1>Matthew's Cookbook</h1>
+            </div>
+        </div>
+        <div class="hard">
+            <div class="page-container"></div>
+        </div>
+        <div>
+            <div class="page-container">
+                <h1>About</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        <div>
+            <div class="page-container"></div>
+        </div>
+        <div>
+            <div class="page-container">
+                <h1>Table of Content</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        <div>
+            <div class="page-container">
+                <h1>Steak</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        <div>
+            <div class="page-container">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+    </div>
+    
 
-    <a href="./recipes/steak.html">Steak Recipe</a>
+    <script type="text/javascript">
+        $('#flipbook').turn({
+            width: 1200,
+            height: 800,
+            page: 1,
+            duration: 1200,
+            autoCenter: true,
+            gradients: true,
+            acceleration: false,
+        })
+
+        $(window).bind('keydown', function(e) {
+            if (e.keyCode === 37)
+                $('#flipbook').turn('previous');
+
+            else if (e.keyCode === 39)
+                $('#flipbook').turn('next');
+
+        });
+    </script>
 </body>
 </html>

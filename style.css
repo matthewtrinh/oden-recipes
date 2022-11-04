@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Lora);
+
+html {
+    height: 100vh;
+    background-image: url("/img/pasta-cooking-ingredients.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#flipbook{
+    -webkit-transition:margin-left 0.5s ease-in-out;
+    -moz-transition:margin-left 0.5s ease-in-out;
+    -o-transition:margin-left 0.5s ease-in-out;
+    -ms-transition:margin-left 0.5s ease-in-out;
+    transition:margin-left 0.5s ease-in-out;
+}
+
+#flipbook .shadow,
+#flipbook.shadow{
+  -webkit-box-shadow: 0 4px 10px #666;
+  -moz-box-shadow: 0 4px 10px #666;
+  -ms-box-shadow: 0 4px 10px #666;
+  -o-box-shadow: 0 4px 10px #666;
+  box-shadow: 0 4px 10px #666;
+}
+
+#flipbook .page-wrapper{
+    -webkit-perspective:2000px;
+    -moz-perspective: 2000px;
+    -ms-perspective: 2000px;
+    perspective: 2000px;
+}
+
+#flipbook .page {
+    background: white;
+    width: 600px;
+    height: 800px;
+}
+
+.page-container {
+    padding: 20px 40px;
+    box-sizing: border-box;
+    height: 100%;
+    border-right: 1px inset darkgray;
+}
+
+#book-cover {
+    border-left: 12px double white;
+    box-shadow: inset 10px 0 20px rgb(0 0 0 / 15%);
+    text-align: center;
+}
+
+#book-cover h1 {
+    margin-top: 300px;
+    font-size: 40px;
+    font-weight: 100;
+    font-family: "Lora";
+    border: 5px double rgba(0, 0, 0, 0.5);
+}
+

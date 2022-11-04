@@ -22,7 +22,7 @@ body {
     /* standard styling */
     .navbar {
         color: rgb(65, 65, 65);
-        background-color: white;
+        background-color: antiquewhite;
         height: 80px;
         box-shadow: 0 0.125rem 0.375rem rgb(0 0 0 / 15%);
         position: fixed;

@@ -2,7 +2,7 @@
 
 html {
     height: 100vh;
-    background-image: url("/img/pasta-cooking-ingredients-min.jpg");
+    background-image: url("https://matthewtrinh.github.io/odin-recipes/img/pasta-cooking-ingredients-min.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
